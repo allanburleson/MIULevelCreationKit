@@ -79,7 +79,7 @@ Let’s add the base Learning to Roll level mesh so we can get started with Stat
 
 ![image alt text](ReadmeImages/image_5.png)
 
-In the Scene Hierarchy open up the Learning to Roll object and you will find 6 objects that correspond to different sections of the level mesh. In the Inspector Window you should see a Mesh Renderer on each one of these objects.
+In the Scene Hierarchy open up the Learning to Roll object and you will find 7 objects that correspond to different sections of the level mesh. In the Inspector Window you should see a Mesh Renderer on each one of these objects.
 
 Select **Cube (6)** and Open up the *Mesh Renderer* component by clicking on the arrow on the left side and you should see a list of Materials (open it up if closed by clicking on the arrow). You should see 3 Materials listed: *Tile01-AA*, *Fill01-C Local*, and *Edge C*. Material links are based on name, so these would work, but we have some sample materials to use that have actual graphics and are easier to work with.
 
@@ -87,11 +87,11 @@ We can find the correct materials in *MIU > Level Materials* in the Project Wind
 
 To replace the materials, you can drag them from the Project Window and drop them on top of the current material inside the Materials array (*Hint: You can lock the mesh to the inspector window using the lock icon at the top right of the window to prevent selecting the materials*).
 
-Repeat that process for the remaining 5 objects in the LearningToRoll group and you should be rewarded with this:
+Repeat that process for the remaining 6 objects in the LearningToRoll group and you should be rewarded with this:
 
 ![image alt text](ReadmeImages/image_6.png)
 
-Now we have the visual meshes ready, but we need to make them physical! So, select all 6 objects inside the LearningToRoll object and press the Add Component button in the Inspector Window. Type in "*Mesh Collider*" and select that when it shows up. Then at the top right of the Inspector Window check the “*Static*” checkbox. This tells the Level Builder that the geometry won’t move and that it should treat it as collidable with the marble. Finally drag and drop the entire *LearningToRoll* object into the Static group in the Scene Hierarchy.
+Now we have the visual meshes ready, but we need to make them physical! So, select all 7 objects inside the LearningToRoll object and press the Add Component button in the Inspector Window. Type in "*Mesh Collider*" and select that when it shows up. Then at the top right of the Inspector Window check the “*Static*” checkbox. This tells the Level Builder that the geometry won’t move and that it should treat it as collidable with the marble. Finally drag and drop the entire *LearningToRoll* object into the Static group in the Scene Hierarchy.
 
 Now, any level requires a **Start Pad**, **End Pad**, and **Level Bounds** ... so lets make them!
 
